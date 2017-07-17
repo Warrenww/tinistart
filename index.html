@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mywebsite</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/RWD.css" type="text/css" />
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+  </head>
+  <body>
+    <nav id="original-nav">
+      <a href="" class="branding" >
+        <img src="img/logo.png" class="menu-logo">
+      </a>
+      <div class="menu">
+        <a href="" class="menu-item">menu 1</a>        |
+        <a href="" class="menu-item">menu 2</a>        |
+        <a href="feature.html" class="menu-item">feature</a>        |
+        <a href="" class="menu-item">menu 4</a>
+      </div>
+      <div class="menu-BG" id="nav"> </div>
+    </nav>
+
+    <div class="mobile">
+      <button onclick="nav()" id="nav-buttom">
+        <span id="icon1" style="top:20%"></span>
+        <span id="icon2" style="top:40%"></span>
+        <span id="icon3" style="top:60%"></span>
+      </button>
+      <div onclick="nav()"id="mobile-nav" >
+        <div id="mobile-nav-container">
+          <a href="" class="menu-item">menu 1</a>
+          <a href="" class="menu-item">menu 2</a>
+          <a href="feature.html" class="menu-item">feature</a>
+          <a href="" class="menu-item">menu 4</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page1" >
+      <div class="slideshow">
+        <div class="p1-item-1" >
+         <h1>開心公司為您開心的</h1>
+         <h2>開新公司</h2>
+         <h3>限量優惠價7500元起</h3>
+         <p>
+           您將會有專人為您處理公司設立流程，我們在此隨時為您服務
+         </p>
+         <a class="button" onclick="scroll_to_div('page2')" >瞭解更多</a>
+        </div>
+        <div class="p1-item-2" >
+          <h1>開心公司為您打開數位時代的</h1>
+          <h2><span style="font-size:50%">新</span>企業財報</h2>
+          <h3>限量優惠價12,000元起</h3>
+          <p>
+            數據分析不只是工具、技術，其實是一種企業文化
+          </p>
+          <a class="button" onclick="scroll_to_div('page2')" >瞭解更多</a>
+        </div>
+        <div class="p1-item-3" >
+          <h1>開心公司為您開新公司＋量身打造</h1>
+          <h2><span style="font-size:50%">新</span>公司網站</h2>
+          <h3>限量優惠價7500元起</h3>
+          <p>
+            您將會有專人為您處理公司設立, 網站架設流程，我們在此隨時為您服務
+          </p>
+         <a class="button" onclick="scroll_to_div('page2')" >瞭解更多</a>
+        </div>
+        <div class="p1-item-4" >
+          <h1>開心公司為您開新公司＋網站+再送</h1>
+          <h2>100 則FB推播</h2>
+          <h3>限量優惠價7500元起</h3>
+          <p>
+            您將會有專人為您處理公司設立, 網站架設流程，我們在此隨時為您服務
+
+          </p>
+           <a class="button" onclick="scroll_to_div('page2')" >瞭解更多</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page2" id="page2">
+      <img src="img/img1.png" style="width:100%;height:auto" />
+      <div class="text-container">
+        <h1>
+          想要找人設立公司很簡單 <br />
+          但想要足夠周全的服務卻很難找到
+        </h1>
+        <span class="emptyline"> </span>
+        <p>
+          我們所設計的服務方案會將設立公司時所需要
+          的東西盡可能的考慮進去並設計出足以讓客人
+          您高枕無憂的服務方案，我們會有專人為您服
+          務，同時隨時接受您寶貴的意見，只要是您需
+          要的，我們會盡一切可能的為您辦到。
+        </p>
+      </div>
+      <img src="img/img2.png" style="width:100%;height:auto" />
+      <a href="" class="button">button@page2</a>
+    </div>
+
+    <div class="page3">
+      <div style="height:50px"></div>
+      <div class="text-container">
+        <h1>屬於我們的服務特色</h1>
+        <span class="emptyline"> </span>
+        <p>
+          周全的服務方案代表著多樣化的功能，我們會和
+          相關的網站合作以提供您更好的服務體驗
+        </p>
+      </div>
+      <div class="container">
+        <div class="container-item">
+          <img src="img/icon1.png" class="feature-img"/>
+          <h1>專業設計</h1>
+          <p>
+            由我們專業人員所設計合適的服務方案可以應對
+            開設公司時的大多數需求，您只需要將設立公司
+            所需要的您的的資料交給我們即可。
+          </p>
+        </div>
+        <div class="container-item">
+          <img src="img/icon2.png" class="feature-img"/>
+          <h1>使用設備適應</h1>
+          <p>
+            我們所提供的公司網站設計服務所設計的網站能讓
+            您的網站能適應各種設備上的使用，不管是從一般
+            的桌上型電腦到筆記型電腦還是從智慧型手機到平
+            板電腦，我們為您架設的網站通通都可以適應。
+          </p>
+        </div>
+        <div class="container-item">
+          <img src="img/icon3.png" class="feature-img"/>
+          <h1>隨時與我們交流</h1>
+          <p>
+            我們有專門的線上即時文字客服系統為您解決各種疑
+            難雜症，當然，如有需要也可以撥打我們的客服專線
+            ，到時將會有專人為您服務。
+          </p>
+        </div>
+        <div class="container-item">
+          <img src="img/icon3.png" class="feature-img"/>
+          <h1>SEO工具</h1>
+          <p>
+            我們會使用專業的SEO工具和頁面分級技術讓您的
+            網站更容易讓人找到，增加您的網站的曝光度。
+          </p>
+        </div>
+        <div class="container-item">
+          <img src="img/icon1.png" class="feature-img"/>
+          <h1>專業的部落格和粉絲頁</h1>
+          <p>
+            我們會使用熱門的部落格和粉絲頁平台為您編寫您
+            所需要的文章、教程、意見，與此同時，您也可以
+            決定要發布的文章種類和數量。
+          </p>
+        </div>
+        <div class="container-item">
+          <img src="img/icon2.png" class="feature-img"/>
+          <h1>定期部落格更新</h1>
+          <p>
+            我們會定期更新部落格，讓有想要了解更多的你
+            們能更加了解我們所提供的服務的內容的詳細相
+            關訊息。
+          </p>
+        </div>
+      </div>
+        <a href="feature.html" class="button">view all feature</a>
+
+    </div>
+
+    <div class="page4">
+      <div class="p4-img-box"></div>
+      <div class="p4-text">
+        <article>
+          “他們的服務真的很棒，不只是幫忙開設
+          公司而已，連我們之後會用到的東西幾乎
+          都為我們準備好了。簡直貼心到不能在更
+          貼心了。”
+        </article>
+        <span class="emptyline" style="display:block"></span>
+        <b>- 陳重光</b>
+        <p>
+          DIMA創辦人
+        </p>
+      </div>
+    </div>
+
+    <div class="page5">
+      <h1>公司設立全流程</h1>
+      <div class="container">
+        <div class="container-item flow-item ">
+          <img src="img/icon6.png" style="width:50px"/>
+          <h2>step 1</h2>
+          <p>
+            委託人資料提供
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon5.png" style="width:50px"/>
+          <h2>step 2</h2>
+          <p>
+            經濟部-公司名稱預查
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon4.png" style="width:50px"/>
+          <h2>step 3</h2>
+          <p>
+            銀行-設立籌備處帳戶
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon6.png" style="width:50px"/>
+          <h2>step 4</h2>
+          <p>
+            公司地址登記
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon5.png" style="width:50px"/>
+          <h2>step 5</h2>
+          <p>
+            資本額籌備完畢，準備資本額查核簽證所需文件
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon4.png" style="width:50px"/>
+          <h2>step 6</h2>
+          <p>
+            經濟部-公司登記
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon6.png" style="width:50px"/>
+          <h2>step 7</h2>
+          <p>
+            國稅局-營業登記
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon5.png" style="width:50px"/>
+          <h2>step 8</h2>
+          <p>
+            勞/健保投保單位成立
+          </p>
+        </div>
+        <div class="container-item flow-item ">
+          <img src="img/icon4.png" style="width:50px"/>
+          <h2>step 9</h2>
+          <p>
+            國貿局-進出口廠商登記(如果有需要)
+          </p>
+        </div>
+      </div>
+      <a href="" class="button">button@p5</a>
+    </div>
+
+    <div class="page6">
+      <span style="height:50px;width:100%"></span>
+      <div class="text-container" >
+        <h1>我們專門為中小企業服務</h1>
+        <span class="emptyline"> </span>
+        <p>
+        我們專門為想要創業的您服務，不管您是想
+        要成為一位網拍賣家還是想開藥局、開餐廳
+        、開旅館又或者是想開設舞蹈班、補習班，
+        我們都能為您服務。
+        </p>
+      </div>
+      <div class="container p6-container">
+        <div class="container-item p6-item" style="background-image:url(img/img4.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img5.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img6.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img4.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img5.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img6.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img4.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img5.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img6.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+        <div class="container-item p6-item" style="background-image:url(img/img4.png)">
+          <p>
+            LANDSCAPERS &<br />LAWN CARE
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>
+        © wwwwww.com™ & Encoda Group™ Inc. &nbsp;|
+        &nbsp; wwwwww.com is a reistered Trademark &nbsp;|
+        &nbsp; All Rights Reserved
+      </span>
+        <p>
+          <a href="">&nbsp; Terms & Conditions &nbsp;</a>|
+          <a href="">&nbsp; Privacy Policy &nbsp;</a>
+        </p>
+    </footer>
+
+    <button onclick="scrollToTop()" id="Top" title="Go to top">
+      <img src="img/arrow.png" style="width:20px;transform:rotate(-90deg)" />
+    </button>
+
+
+  </body>
+</html>

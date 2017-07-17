@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feature</title>
+    <link rel="stylesheet" href="css/feature.css" type="text/css" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/RWD.css" type="text/css" />
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+  </head>
+  <body>
+    <nav id="original-nav" >
+      <a href="index.html" class="branding" >
+        <img src="img/logo.png" class="menu-logo">
+      </a>
+      <div class="menu">
+        <a href="" class="menu-item">menu 1</a>        |
+        <a href="" class="menu-item">menu 2</a>        |
+        <a href="feature.html" class="menu-item">feature</a>        |
+        <a href="" class="menu-item">menu 4</a>
+      </div>
+      <div class="menu-BG" style="opacity:.8"> </div>
+    </nav>
+
+    <div class="mobile">
+      <button onclick="nav()" id="nav-buttom">
+        <span id="icon1" style="top:20%"></span>
+        <span id="icon2" style="top:40%"></span>
+        <span id="icon3" style="top:60%"></span>
+      </button>
+      <div onclick="nav()"id="mobile-nav" >
+        <div id="mobile-nav-container">
+          <a href="" class="menu-item">menu 1</a>
+          <a href="" class="menu-item">menu 2</a>
+          <a href="feature.html" class="menu-item">feature</a>
+          <a href="" class="menu-item">menu 4</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-page1" >
+      <h1>Feature</h1>
+      <p>
+        周全的服務方案代表著多樣化的
+        功能，我們會和相關的網站合作
+        以提供您更好的服務體驗
+      </p>
+      <a class="Button" onclick="scroll_to_div('feature-page2')">view details</a>
+    </div>
+
+    <div class="feature-page2" id="feature-page2">
+      <div class="container">
+        <div class="container-item">
+          <img src="img/icon1.png" class="feature-img"/>
+          <h1>專業設計</h1>
+          <p>
+            由我們專業人員所設計合適的服務方案可以應對
+            開設公司時的大多數需求，您只需要將設立公司
+            所需要的您的的資料交給我們即可。
+          </p>
+          <a class="Button sButton" onclick="scroll_to_div('section1')" >Learn more</a>
+        </div>
+        <div class="container-item">
+          <img src="img/icon2.png" class="feature-img"/>
+          <h1>使用設備適應</h1>
+          <p>
+            我們所提供的公司網站設計服務所設計的網站能讓
+            您的網站能適應各種設備上的使用，不管是從一般
+            的桌上型電腦到筆記型電腦還是從智慧型手機到平
+            板電腦，我們為您架設的網站通通都可以適應。
+          </p>
+          <a class="Button sButton" onclick="gop2()">Learn more</a>
+        </div>
+        <div class="container-item">
+          <img src="img/icon3.png" class="feature-img"/>
+          <h1>隨時與我們交流</h1>
+          <p>
+            我們有專門的線上即時文字客服系統為您解決各種疑
+            難雜症，當然，如有需要也可以撥打我們的客服專線
+            ，到時將會有專人為您服務。
+          </p>
+          <a class="Button sButton" onclick="gop2()">Learn more</a>
+        </div>
+        <div class="container-item">
+          <img src="img/icon3.png" class="feature-img"/>
+          <h1>SEO工具</h1>
+          <p>
+            我們會使用專業的SEO工具和頁面分級技術讓您的
+            網站更容易讓人找到，增加您的網站的曝光度。
+          </p>
+          <a class="Button sButton" onclick="gop2()">Learn more</a>
+        </div>
+        <div class="container-item">
+          <img src="img/icon1.png" class="feature-img"/>
+          <h1>專業的部落格和粉絲頁</h1>
+          <p>
+            我們會使用熱門的部落格和粉絲頁平台為您編寫您
+            所需要的文章、教程、意見，與此同時，您也可以
+            決定要發布的文章種類和數量。
+          </p>
+          <a class="Button sButton" onclick="gop2()">Learn more</a>
+        </div>
+        <div class="container-item">
+          <img src="img/icon2.png" class="feature-img"/>
+          <h1>定期部落格更新</h1>
+          <p>
+            我們會定期更新部落格，讓有想要了解更多的你
+            們能更加了解我們所提供的服務的內容的詳細相
+            關訊息。
+          </p>
+          <a class="Button sButton" onclick="gop2()">Learn more</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="feature-page3">
+      <div class="feature-p3-item" id="section1">
+        <div class="title">
+          <h1>head1</h1><span></span>
+        </div>
+        <div class="text-container">
+
+        </div>
+      </div>
+      <div class="feature-p3-item" id="section2">
+        <div class="title">
+          <h1>head1</h1><span></span>
+        </div>
+        <div class="text-container">
+
+        </div>
+      </div>
+      <div class="feature-p3-item" id="section3">
+        <div class="title">
+          <h1>head1</h1><span></span>
+        </div>
+        <div class="text-container">
+
+        </div>
+      </div>
+      <div class="feature-p3-item" id="section4">
+        <div class="title">
+          <h1>head1</h1><span></span>
+        </div>
+        <div class="text-container">
+
+        </div>
+      </div>
+      <div class="feature-p3-item" id="section5">
+        <div class="title">
+          <h1>head1</h1><span></span>
+        </div>
+        <div class="text-container">
+
+        </div>
+      </div>
+      <div class="feature-p3-item" id="section6">
+        <div class="title">
+          <h1>head1</h1><span></span>
+        </div>
+        <div class="text-container">
+
+        </div>
+      </div>
+
+    </div>
+
+    <button onclick="scrollToTop()" id="Top" title="Go to top">
+      <img src="img/arrow.png" style="width:20px;transform:rotate(-90deg)" />
+    </button>
+
+
+
+  </body>
+</html>
