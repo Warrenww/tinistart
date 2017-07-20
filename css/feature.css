@@ -20,43 +20,31 @@
     font-size: 1.5em;
     width: 40%;
   }
-  .Button{
-    background-color:rgb(41, 184, 215);
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 10px 2px;
-    cursor: pointer;
-    font-family: 'Exo', sans-serif;
-  }
-  a.Button:hover,
-  a.Button:active {
-    background-color:rgb(86, 204, 230);
-    text-decoration: none;
-    color: white;
-  }
   .feature-page2{
     background-color: rgb(210, 210, 210);
   }
   .sButton{
+    font-size: 20px;
+    margin: 5%;
+    font-weight: bold;
     background-color: transparent;
     color: rgb(67, 193, 205);
   }
-  a.sButton:hover{
+  a.sButton:hover,
+  a.sButton:active{
+    cursor: pointer;
     color: rgb(94, 195, 245);
     background-color: transparent;
+    text-decoration: none;
   }
   .feature-page3{
     display: flex;
     flex-direction: column;
     padding: 5% 10%;
+    padding-bottom: 0;
   }
-  .feature-p3-item{
-
+  .feature-p3 p{
+    font-size: 1.5em;
   }
   .title{
     display: flex;
@@ -72,162 +60,28 @@
     border: 1px solid black;
     height: 0;
   }
-  .page2,
-  .page3,
-  .page5,
-  .page6{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 5%;
-    overflow: hidden;
-    align-items: center;
-  }
-  .text-container{
-    display: flex;
-    width: 70% ;
-    margin: 0 10%;
-    padding:0 5% ;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Open Sans Condensed', sans-serif;
-  }
-  .text-container h1{
-    font-size: 32px;
-    margin-bottom: 5%;
-  }
-  .emptyline{
-    border:.5px solid rgb(61, 68, 79);
-    width:10%;
-  }
-  .text-container p{
-    font-size: 20px;
-    width: 90%;
-    padding: 0 5%;
-  }
-  .page3{
-    background-color:rgb(212, 212,212);
-  }
-  .container{
-    flex-wrap: wrap;
-    display: -webkit-flex;
-    display: flex;
-    width: 80%;
-    height: auto;
-    justify-content: space-around;
-    align-content: space-around;
-    padding: 5% 10% 5% 10%;
-  }
-  .container-item {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-    justify-content: flex-start;
-    margin: 10px;
-    margin-bottom: 30px;
-    align-items: center;
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-  }
-  .feature-img{
-    width: 75px;
-    margin-bottom: 20px;
-  }
-  .container-item h1{
-    font-size: 28px;
-    margin: 0;
-  }
-  .container-item p{
-    font-size: 1em;
-    margin: 0;
-  }
-  .page4{
-    display: inline-flex;
-    margin: 0;
-  }
-  .p4-img-box{
-    flex:1;
-    background-image: url(../img/img3.png);
-    background-size: cover;
-  }
-  .p4-text{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
+  .box{
     padding-top: 5%;
     padding-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 10%;
-    flex:2;
-    font-family: 'Open Sans Condensed', sans-serif;
   }
-  .p4-text article{
-    font-size: 2.8em;
-    padding-bottom: 5%;
-  }
-  .p4-text b{
-    font-size: 2em;
-    padding-top: 3%;
-    padding-bottom: 0;
-  }
-  .p4-text p{
-    width: 100%;
-    font-size: 1em;
+  .feature-p3-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style-type: none;
     padding: 0;
   }
-  .page5{
-    background-image: url(../img/p5BG.png);
-    background-position: center;
-    background-size: cover;
-    color:white;
-  }
-  .page5 h1{
-    padding-top: 10%;
-    margin: 0;
-    color: white;
-  }
-  .page5 h2{
+  .feature-page3 h2{
+    font-weight: bold;
+    font-size: 1.2em;
     margin: 0;
   }
-  .flow-item{
-    width: 15%;
-  }
-  .page6{
-    background-color: rgb(220, 220, 220);
-    padding-bottom: 0;
-  }
-  .p6-container{
-    width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-bottom:  0;
-  }
-  .p6-item{
-    font-size: 2em;
-    color: white;
-    width: 20%;
+  .feature-p3-container p{
     margin: 0;
-    background-position: center;
-  }
-  .p6-item p{
-    margin: 30% 5%;
-  }
 
-  .footer p{
-    margin: 0;
-    float: right;
   }
-  .footer a{
-    color: white;
-    text-decoration: none;
-  }
-  .footer a:hover,a:active{
-    cursor: pointer;
-    text-decoration: underline;
-    color: rgb(62, 174, 181);
+  .feature-p3-container li{
+    width: 28%;
+    margin-right: 5%;
+    margin-top: 3%;
   }

@@ -1,0 +1,58 @@
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10%;
+  background-image: url(../img/contactBG.jpg);
+  background-attachment: fixed;
+}
+.upper{
+  display: flex;
+  color: white;
+}
+.upper h1{font-size: 3em;margin: 0}
+.upper h2{font-size: 2em;font-weight: lighter;}
+.upper-box{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.col-md-4,
+.form-group{width: 100%}
+.lower{
+  display: flex;
+  width: 100%;
+  background-color: rgba(74, 67, 60, 0.86);
+  margin:  5% 0;
+  color: white;
+  justify-content: space-around;
+}
+.lower h1,.lower p{margin: 0;}
+.lower-box{
+  display: flex;
+  flex-direction: column;
+  align-items:  space-around;
+  width:27%;
+  height: 50%;
+  margin: 3% ;
+}
+.lower-box-box{
+  height: 50%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+.question button{width: 15%}
+#social a{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(172, 172, 172, 0.73);
+  border-radius: 50%;
+  padding: 2%;
+  margin: 1%;
+  transition: all .3s ;
+}
+#social a:hover{
+  background-color: rgb(21, 180, 185);
+  cursor: pointer;
+}
+#social a img{margin: auto ;}
