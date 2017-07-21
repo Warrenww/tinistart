@@ -1,0 +1,405 @@
+
+  @import url('https://fonts.googleapis.com/css?family=Bellefair|Exo:900|Josefin+Sans:300|Open+Sans+Condensed:300');
+  nav{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0 ;
+    height : 50px;
+    z-index: 100;
+    transition: all .8s ease-in-out;
+  }
+  body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Microsoft JhengHei;
+  }
+  .branding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding:0px 0px 0px 50px;
+  }
+  .menu-logo{
+    width:auto;
+    height:40px ;
+  }
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    float: right;
+    color: white;
+  }
+  .menu-item {
+    padding: 20px;
+    font-size: 20px ;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .menu-item:link{
+    text-decoration: none;
+  }
+  .menu-item:hover{
+    color: rgb(71, 188, 209);
+    text-decoration: none;
+  }
+  .menu-BG{
+    position: absolute;
+    height: 50px;
+    width: 100% ;
+    left: 0px;
+    top: 0px;
+    background-color: black ;
+    opacity: 0 ;
+    z-index: -1;
+    transition-timing-function: ease-in-out;
+  }
+  .mobile{
+    display: none;
+  }
+  .page1{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../img/p1BG.png);
+    background-position: center;
+  }
+  .slideshow{
+    position: relative;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    font-family: 'Bellefair', serif;
+  }
+  .slideshow h1{
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .slideshow h2{
+    font-size: 130px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .slideshow h3{
+    font-size: 50px;
+    margin: 0;
+    font-weight:lighter;
+  }
+  .slideshow p{
+    width: 90%;
+    font-size: 24px;
+    padding:0 5%;
+    word-wrap: break-word;
+  }
+  .button{
+    background-color:rgb(41, 184, 215);
+    border: none;
+    color: white;
+    padding: 1.2% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1.2% .5%;
+    cursor: pointer;
+  }
+  a.button:hover,
+  a.button:active {
+    background-color:rgb(86, 204, 230);
+    text-decoration: none;
+    color: white;
+  }
+  .p1-item-1,
+  .p1-item-2,
+  .p1-item-3,
+  .p1-item-4 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    display: block;
+    top: 20%;
+    width: 80%;
+    font-size: 2em;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .p1-item-1{
+    animation-name: anim-1;
+  }
+  .p1-item-2{
+    animation-name: anim-2;
+  }
+  .p1-item-3{
+    animation-name: anim-3;
+  }
+  .p1-item-4{
+    animation-name: anim-4;
+  }
+  @keyframes anim-1 {
+    0%, 8.75% { left: -100%; opacity: 0; }
+    8.75%,21% { left: 10%; opacity: 1; }
+    25%, 100% { left: 110%; opacity: 0; }
+  }
+  @keyframes anim-2 {
+    0%, 25% { left: -100%; opacity: 0; }
+    33.75%, 46% { left: 10%; opacity: 1; }
+    50%, 100% { left: 110%; opacity: 0; }
+  }
+  @keyframes anim-3 {
+    0%, 50% { left: -100%; opacity: 0; }
+    58.75%, 71% { left: 10%; opacity: 1; }
+    75%, 100% { left: 110%; opacity: 0; }
+  }
+  @keyframes anim-4 {
+    0%, 75% { left: -100%; opacity: 0; }
+    83.75%, 96% { left: 10%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+  }
+  .page2,
+  .page3,
+  .page5,
+  .page6,
+  .page7{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    align-items: center;
+  }
+  .text-container{
+    display: flex;
+    width: 70% ;
+    margin: 0 10%;
+    padding:0 5% ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .text-container h1{
+    font-size: 32px;
+    margin-bottom: 5%;
+  }
+  .emptyline{
+    border:.5px solid rgb(61, 68, 79);
+    width:10%;
+  }
+  .text-container p{
+    font-size: 20px;
+    width: 90%;
+    padding: 0 5%;
+  }
+  .page3{
+    background-color:rgb(212, 212,212);
+  }
+  .container{
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 5% 10% 5% 10%;
+  }
+  .container-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    justify-content: flex-start;
+    margin: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .feature-img{
+    width: 75px;
+    margin-bottom: 20px;
+  }
+  .container-item h1{
+    font-size: 28px;
+    margin: 0;
+  }
+  .container-item p{
+    font-size: 1em;
+    margin: 0;
+  }
+  .page4{
+    display: inline-flex;
+    margin: 0;
+  }
+  .p4-img-box{
+    flex:1;
+    background-image: url(../img/img3.png);
+    background-size: cover;
+  }
+  .p4-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
+    flex:2;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .p4-text article{
+    font-size: 2.8em;
+    padding-bottom: 5%;
+  }
+  .p4-text b{
+    font-size: 2em;
+    padding-top: 3%;
+    padding-bottom: 0;
+  }
+  .p4-text p{
+    width: 100%;
+    font-size: 1em;
+    padding: 0;
+  }
+  .page5{
+    background-image: url(../img/p5BG.png);
+    background-position: center;
+    background-size: cover;
+    color:white;
+  }
+  .page5 h1{
+    padding-top: 10%;
+    margin: 0;
+    color: white;
+  }
+  .page5 h2{
+    margin: 0;
+  }
+  .flow-item{
+    width: 15%;
+  }
+  .page6{
+    background-color: rgb(220, 220, 220);
+    padding-bottom: 0;
+  }
+  .p6-container{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom:  0;
+  }
+  .p6-item{
+    font-size: 2em;
+    color: white;
+    width: 20%;
+    margin: 0;
+    background-position: center;
+  }
+  .p6-item p{
+    margin: 30% 5%;
+  }
+  .page7{
+    background-color: black;
+    color:white;
+    padding-top: 5%;
+  }
+  .page7 h1{
+    font-size: 1em;
+  }
+  .page7 h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 0 2%;
+  }
+  .p7-container{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    padding: 2%;
+  }
+  .p7-item{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 3% ;
+  }
+  .p7-item h1{
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .p7-item strong{font-size: 3em}
+  /*
+  .p7-item-left{border-right: 0;}
+  .p7-item-right{border-left: 0;}
+  */
+  .p7-item-middle{
+    color: black;
+    background-color: white;
+  }
+  .p7-but{
+    width: 30%;
+    padding: 3% ;
+  }
+  a.text-a,
+  a.text-a:active{
+    color: rgb(68, 180, 222);
+    text-decoration: underline;
+  }
+  a.text-a:active,
+  a.text-a:hover{color: rgb(93, 219, 223)}
+  #top{
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(149, 143, 136, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 100;
+    transition: all .8s ease-in-out;
+  }
+  #top:hover{
+    background-color: rgba(68, 61, 52,.8);
+  }
+  .footer{
+    font-size: .8em;
+    color: white;
+    background-color: black;
+    width: 96%;
+    padding: 1% 2% ;
+    float: left;
+  }
+  .footer p{
+    margin: 0;
+    float: right;
+  }
+  .footer a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer a:hover,a:active{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(62, 174, 181);
+  }
