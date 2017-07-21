@@ -1,19 +1,20 @@
 
   window.onscroll = function() {scrollFunction()};
-  var w = window.innerWidth;
   function scrollFunction() {
-    var but = document.getElementById("nav-buttom")
+    var but = document.getElementById("nav-buttom"),
+        fnv = document.getElementById('float-nav');
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
           document.getElementById("nav").style.opacity = .9;
           document.getElementById("top").style.opacity = .9;
           but.style.backgroundColor = 'rgba(0,0,0,0.35)';
           but.style.top = '10px';
-
+          fnv.style.top = 0;
       } else {
           document.getElementById("nav").style.opacity = 0;
           document.getElementById("top").style.opacity = 0;
           but.style.backgroundColor = 'rgba(0,0,0,0)';
           but.style.top = 0;
+          fnv.style.top = '-10%';
       }
     }
 
@@ -74,14 +75,13 @@
 
   var i=0;
   function toggle(div_id) {
-    if(i<$('#'+div_id+' li').length){
-      document.getElementsByTagName('button')[1].disabled = 1;
-      document.getElementsByTagName('button')[2].disabled = 1;
-      $("#"+div_id+' li:eq('+i+')').toggle(300,'easeInOutCubic',function(){i++;toggle(div_id);});
+    var b = document.getElementsByTagName('button');
+    if(i<$('#'+div_id).children('li').length){
+      for(var j=0;j<b.length;j++){b[j].disabled = 1;}
+      $("#"+div_id).children('li').eq(i).toggle(300,'easeInOutCubic',function(){i++;toggle(div_id);});
     }else {
       i = 0;
-      document.getElementsByTagName('button')[1].disabled = 0;
-      document.getElementsByTagName('button')[2].disabled = 0;
+      for(var j=0;j<b.length;j++){b[j].disabled = 0;}
     }
   }
 
@@ -105,4 +105,15 @@
         var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
     } else { var angle = 0; }
     return (angle < 0) ? angle + 360 : angle;
+  }
+
+
+
+  window.onresize = test;
+  var handler = window.onresize;
+  handler();
+  function test(x) {
+    var w = window.innerWidth;
+      if(w>1024){$('#faq li').css('display','list-item');}
+      else{$('#faq li').css('display','none');}
   }

@@ -322,10 +322,14 @@
   }
   .page7 h2{
     font-size: 2em;
+    text-align: center;
+    padding: 0 2%;
   }
   .p7-container{
     display: flex;
     align-items:  center;
+    justify-content: center;
+    padding: 2%;
   }
   .p7-item{
     display: flex;
@@ -341,21 +345,25 @@
     margin: 0;
   }
   .p7-item strong{font-size: 3em}
+  /*
   .p7-item-left{border-right: 0;}
   .p7-item-right{border-left: 0;}
+  */
   .p7-item-middle{
     color: black;
     background-color: white;
   }
   .p7-but{
-    width: 70%;
-    padding: 5%;
+    width: 30%;
+    padding: 3% ;
   }
   a.text-a,
   a.text-a:active{
     color: rgb(68, 180, 222);
-    text-decoration: none;
+    text-decoration: underline;
   }
+  a.text-a:active,
+  a.text-a:hover{color: rgb(93, 219, 223)}
   #top{
     opacity: 0;
     position: fixed;
