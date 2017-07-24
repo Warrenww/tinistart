@@ -103,13 +103,13 @@
     background-color:rgb(41, 184, 215);
     border: none;
     color: rgb(255,255,255);
-    padding: 1.2% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin: 1.2% .5%;
     cursor: pointer;
+    padding: 1.2% 2%;
     transition: all .2s ease-in-out;
   }
   a.button:hover,
@@ -389,6 +389,7 @@
     float: left;
   }
   .footer p{
+    display: block;
     margin: 0;
     float: right;
   }

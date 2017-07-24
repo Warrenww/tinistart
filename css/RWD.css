@@ -4,14 +4,10 @@
     position: absolute;
     z-index: 2;
   }
+  .branding{padding-right: 50px}
   .menu,
-  #float-nav,
-  .upper-box h2,
-  .title span,
-  #faq-head{display: none;}
-  .mobile,
-  .arrow-down,
-  #faq-title{display: block;}
+  .upper-box h2{display: none;}
+  .mobile{display: block;}
   .text-container{
     width: 84%;
     margin: 0 5%;
@@ -35,24 +31,16 @@
   .slideshow h3{font-size: 30px;}
   .slideshow p{font-size: 20px;}
   .pricing-page1 h1{font-size: 2em;}
-  .pricing-page1{padding-left: 5%;}
   .pricing-page1 li{font-size: 1em;}
   .pricing-appraise-box{width: 80%;}
   .upper{flex-direction: column;}
   .upper-box{width: 100%}
   .input-style{width: 100%}
-  #faq .box{padding: 1%;border: 1px solid gray;}
-  .title{
-    justify-content: flex-start;
-    pointer-events: all;
-  }
-  #faq{padding-bottom: 5%}
-  #faq li{display: none;}
-  #faq .inner_ul li{display: list-item;}
+
 }
 @media screen and (max-width: 768px) {
   .container{flex-direction: column;}
-  .container-item{width: 100%;}
+  .container-item{width: 98%;margin: 1%}
   .feature-img{margin-bottom: 5px;}
   .text-container{
     width: 100%;
@@ -71,6 +59,8 @@
     height: 200px ;
     background-size: cover;
     justify-content: center;
+    margin: 0;
+    width: 100%;
   }
   .p6-item p{
     margin: 0 10%;
@@ -78,11 +68,15 @@
   .p6-container{padding-bottom: 0;}
   .footer p{float:left;}
   .slideshow h2{font-size: 70px;}
-  #Top{
+  #top{
     bottom: 10px;
     right: 15px;
   }
-  .feature-page1 h1{font-size: 2em;}s
+  #nav-button{
+    top: 10px;
+    right: 15px;
+  }
+  .feature-page1 h1{font-size: 2em;}
   .feature-page1 p{font-size: 1em;}
   .feature-p3-container{flex-direction: column;}
   .feature-p3-container li{width: 100%;}
@@ -99,6 +93,7 @@
     font-size:1.5em;
     margin: 3%;
   }
+  #slogan{font-size: 1.2em}
   .pricing-appraise{width: 90%;}
   .pricing-appraise-box{width: 100%;}
   .lower{
@@ -108,8 +103,21 @@
   }
   .lower-box{width: 100%;}
   .p7-item strong{font-size: 2.4em}
+  #faq .title span,
+  #faq-head{display: none;}
+  #faq-title{display: block;}
+  #faq .box{padding: 1%;border: 1px solid gray;}
+  #faq{padding-bottom: 5%}
+  #faq li{display: none;}
+  #faq .inner_ul li{display: list-item;}
+  #float-nav{display: none;}
+  .arrow-down{display: block;}
+  .title{
+    justify-content: flex-start;
+    pointer-events: all;
+  }
 }
-@media screen and (max-height:450px) {
+@media screen and (max-height:500px) {
   .slideshow h1{font-size: 25px;}
   .slideshow h2{font-size: 50px;}
   .slideshow h3{font-size: 25px;}
@@ -117,9 +125,10 @@
   .pricing-page1{
     font-size: .8em;
     height: 100%;
-    padding-top: 3%;
+    padding-top: 5%;
   }
   .pricing-appraise{display: none;}
+  .menu-item{padding: 15px}
 }
 @media screen and (max-width:400px) {
   .slideshow h1{font-size: 30px;}
@@ -130,6 +139,15 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+  .pricing-mobile button{font-size: .8em}
+  .arrow-down{
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 9px solid rgb(131, 198, 213);
+    margin: 1% 6% 0 0;
+  }
+  .pricing-mobile h2{font-size: 1.5em}
+  .pricing-contact{padding-bottom: 3%}
   .text-container p{font-size: .8em;}
   .container-item p{
     font-size: .8em;
@@ -138,10 +156,15 @@
   .p4-text article{font-size: 1.6em;}
   .p7-container{display: none;}
   .p7-but{width: 80%;}
-}
-@media screen and (min-height:1000px) {
-  .contact-page{height: 100%}
+  .pricing-contact{flex-direction: column;}
+  .pricing-contact-but-box{justify-content: center;}
+  .pricing-appraise{display: none;}
+  .feature-page1 p{width: 90%;}
+  .col-md-4{width: 100%}
+  .footer span{display: block; font-size: .8em}
+  .title h1{font-size: 1.5em;}
 }
 @media screen and (max-aspect-ratio: 1/1) and (min-height:1000px) {
   .page1{height: 70%;}
+  .faq-head{height: 40%}
 }

@@ -43,7 +43,6 @@
   margin-top: 5%;
   text-align: center;
 }
-.question button{width: 15%}
 #fb {background-image: url(../img/fb.png);}
 #fb:hover{background-color: rgb(49, 115, 203);}
 #twi {background-image: url(../img/twitter.png);}

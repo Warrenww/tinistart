@@ -80,10 +80,11 @@
 
   var i=0;
   function toggle(div_id) {
-    var b = document.getElementsByTagName('button');
-    if(i<$('#'+div_id).children('li').length){
+    var b = document.getElementsByTagName('button'),
+        obj = $('#'+div_id).children('li');
+    if(i<obj.length){
       for(var j=0;j<b.length;j++){b[j].disabled = 1;}
-      $("#"+div_id).children('li').eq(i).toggle(300,'easeInOutCubic',function(){i++;toggle(div_id);});
+      obj.eq(i).toggle(300,'easeInOutCubic',function(){i++;toggle(div_id);});
     }else {
       i = 0;
       for(var j=0;j<b.length;j++){b[j].disabled = 0;}
@@ -114,11 +115,11 @@
 
 
 
-  window.onresize = test;
+  window.onresize = resize_win;
   var handler = window.onresize;
   handler();
-  function test(x) {
+  function resize_win(x) {
     var w = window.innerWidth;
-      if(w>1024){$('#faq li').css('display','list-item');}
+      if(w>=1024){$('#faq li').css('display','list-item');}
       else{$('#faq li').css('display','none');}
   }

@@ -33,9 +33,7 @@
   border-radius: 5px ;
 
 }
-#singlebutton p{
-  margin: 0;
-}
+#singlebutton p {margin: 0 1%;}
 #singlebutton:hover{
   background-color: rgb(123, 223, 217);
 }
