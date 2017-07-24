@@ -2,16 +2,21 @@
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
     var but = document.getElementById("nav-buttom"),
-        fnv = document.getElementById('float-nav');
+        fnv = document.getElementById('float-nav'),
+        top = document.getElementById("top");
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
           document.getElementById("nav").style.opacity = .9;
-          document.getElementById("top").style.opacity = .9;
+          top.style.opacity = .9;
+          top.disabled = 0 ;
+          top.style.cursor = 'pointer';
           but.style.backgroundColor = 'rgba(0,0,0,0.35)';
           but.style.top = '10px';
           fnv.style.top = 0;
       } else {
           document.getElementById("nav").style.opacity = 0;
-          document.getElementById("top").style.opacity = 0;
+          top.style.opacity = 0;
+          top.disabled = 1 ;
+          top.style.cursor = 'default';
           but.style.backgroundColor = 'rgba(0,0,0,0)';
           but.style.top = 0;
           fnv.style.top = '-10%';

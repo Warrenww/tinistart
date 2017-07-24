@@ -39,8 +39,9 @@
     padding: 20px;
     font-size: 20px ;
     text-align: center;
-    color: white;
+    color: rgb(255,255,255);
     font-family: 'Josefin Sans', sans-serif;
+    transition: all .2s ease-in-out;
   }
   .menu-item:link{
     text-decoration: none;
@@ -58,7 +59,7 @@
     background-color: black ;
     opacity: 0 ;
     z-index: -1;
-    transition-timing-function: ease-in-out;
+    transition: all .4s ease-in-out;
   }
   .mobile{
     display: none;
@@ -101,7 +102,7 @@
   .button{
     background-color:rgb(41, 184, 215);
     border: none;
-    color: white;
+    color: rgb(255,255,255);
     padding: 1.2% 2%;
     text-align: center;
     text-decoration: none;
@@ -109,6 +110,7 @@
     font-size: 20px;
     margin: 1.2% .5%;
     cursor: pointer;
+    transition: all .2s ease-in-out;
   }
   a.button:hover,
   a.button:active {
@@ -290,7 +292,7 @@
     margin: 0;
   }
   .flow-item{
-    width: 15%;
+    width: 20%;
   }
   .page6{
     background-color: rgb(220, 220, 220);
@@ -353,10 +355,6 @@
     color: black;
     background-color: white;
   }
-  .p7-but{
-    width: 30%;
-    padding: 3% ;
-  }
   a.text-a,
   a.text-a:active{
     color: rgb(68, 180, 222);
@@ -374,7 +372,7 @@
     outline: none;
     background-color: rgba(149, 143, 136, 0.5);
     color: white;
-    cursor: pointer;
+    cursor: default;
     padding: 15px;
     z-index: 100;
     transition: all .8s ease-in-out;
@@ -397,6 +395,7 @@
   .footer a{
     color: white;
     text-decoration: none;
+    transition: all .2s ease-in-out;
   }
   .footer a:hover,a:active{
     cursor: pointer;
