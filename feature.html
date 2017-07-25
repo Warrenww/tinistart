@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Feature</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/feature.css" type="text/css" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/feature.css" type="text/css" />
     <link rel="stylesheet" href="css/mobile.css" type="text/css" />
     <link rel="stylesheet" href="css/question.css" type="text/css" />
     <link rel="stylesheet" href="css/RWD.css" type="text/css" />
@@ -15,7 +16,8 @@
 
   </head>
   <body>
-    <nav id="original-nav" >
+    <span id="original-nav"></span>
+    <nav>
       <a href="index.html" class="branding" >
         <img src="img/logo.png" class="menu-logo">
       </a>
@@ -26,7 +28,6 @@
         <a href="FAQ.html" class="menu-item">FAQ</a>    |
         <a href="contact.html" class="menu-item">Contact</a>
       </div>
-      <div class="menu-BG" style="opacity:.8"> </div>
       <div id="nav"></div>
     </nav>
 
@@ -47,7 +48,7 @@
       </div>
     </div>
 
-    <div class="feature-page1" >
+    <div class="page1 heading feature-page1" >
       <h1>Feature</h1>
       <p>
         周全的服務方案代表著多樣化的
@@ -57,7 +58,7 @@
       <a class="button" onclick="scroll_to_div('feature-page2')">view details</a>
     </div>
 
-    <div class="feature-page2" id="feature-page2">
+    <div class="page3" id="feature-page2">
       <div class="container">
         <div class="container-item">
           <img src="img/icon1.png" class="feature-img"/>
@@ -430,10 +431,8 @@
            <textarea  required style="height:100px" class="form-control input-style" id="textarea" name="textarea" placeholder="留言*"></textarea>
         </div>
       </div>
-      <div class="col-md-4">
-         <button id="singlebutton" name="singlebutton" class="button">
-            <p>Send</p>
-         </button>
+      <div>
+         <button id="singlebutton" name="singlebutton" class="button">Send</button>
       </div>
     </form>
 
