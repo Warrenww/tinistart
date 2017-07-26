@@ -1,126 +1,15 @@
-
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    var but = document.getElementById("nav-buttom"),
-        fnv = document.getElementById('float-nav'),
-        top = document.getElementById("top"),
-        nav = document.getElementById("original-nav");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          nav.style.backgroundColor = 'rgba(0,0,0,.9)';
-          top.style.opacity = .9;
-          top.disabled = 0 ;
-          top.style.cursor = 'pointer';
-          but.style.backgroundColor = 'rgba(0,0,0,0.35)';
-          but.style.top = '10px';
-          fnv.style.top = 0;
-      } else {
-          nav.style.backgroundColor = 'rgba(0,0,0,0)';
-          top.style.opacity = 0;
-          top.disabled = 1 ;
-          top.style.cursor = 'default';
-          but.style.backgroundColor = 'rgba(0,0,0,0)';
-          but.style.top = 0;
-          fnv.style.top = '-10%';
-      }
-    }
-
-  var timeOut;
-  function scrollToTop() {
-    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-         window.scrollBy(0,-50);
-         timeOut=setTimeout('scrollToTop()',5);
-    }
-    else clearTimeout(timeOut);
-  }
-
-  var rotated = true;
-  function nav() {
-    var div1 = document.getElementById('icon1'),
-        div2 = document.getElementById('icon2'),
-        div3 = document.getElementById('icon3'),
-        main = document.getElementById('nav-buttom'),
-        column = document.getElementById('mobile-nav-container'),
-        main = document.getElementById('mobile-nav'),
-        top = document.getElementById('top');
-
-    if(rotated){
-      div1.style.top = div2.style.top = div3.style.top = '25px';
-      div1.style.transform   = 'rotate(45deg)';
-      div2.style.transform   = 'rotate(-45deg)';
-      div3.style.opacity = 0;
-      column.style.right = '0%';
-      main.style.zIndex = '100' ;
-      main.style.backgroundColor = 'rgba(0,0,0,.5)';
-      top.style.display = 'none';
-    }else {
-      div1.style.transform  = div2.style.transform = 'rotate(0deg)';
-      div1.style.top = '15px';
-      div2.style.top = '23.75px' ;
-      div3.style.top = '32.5px' ;
-      div3.style.opacity = 1;
-      column.style.right = '-200px';
-      setTimeout(
-        function(){
-        main.style.zIndex = '-1';
-        top.style.display = 'block';}
-        ,800) ;
-      main.style.backgroundColor = 'rgba(0,0,0,0)';
-
-    }
-
-    rotated = !rotated;
-  }
-
-
-  function scroll_to_div(div_id){
-   $('html,body').animate(
-   {scrollTop: $("#"+div_id).offset().top},
-   1000,'easeInOutCubic');
-  }
-
-
-  var i=0;
-  function toggle(div_id) {
-    var b = document.getElementsByTagName('button'),
-        obj = $('#'+div_id).children('li');
-    if(i<obj.length){
-      for(var j=0;j<b.length;j++){b[j].disabled = 1;}
-      obj.eq(i).toggle(300,'easeInOutCubic',function(){i++;toggle(div_id);});
-    }else {
-      i = 0;
-      for(var j=0;j<b.length;j++){b[j].disabled = 0;}
-    }
-  }
-
-  function rotate(div_id) {
-    var d = document.getElementById(div_id);
-    ang = getRotationDegrees($('#'+div_id));
-    ang += 180;
-    d.style.transform  = 'rotate('+ang+'deg)' ;
-  }
-
-  function getRotationDegrees(obj) {
-    var matrix = obj.css("-webkit-transform") ||
-    obj.css("-moz-transform")    ||
-    obj.css("-ms-transform")     ||
-    obj.css("-o-transform")      ||
-    obj.css("transform");
-    if(matrix !== 'none') {
-        var values = matrix.split('(')[1].split(')')[0].split(',');
-        var a = values[0];
-        var b = values[1];
-        var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
-    } else { var angle = 0; }
-    return (angle < 0) ? angle + 360 : angle;
-  }
-
-
-
-  window.onresize = resize_win;
-  var handler = window.onresize;
-  handler();
-  function resize_win(x) {
-    var w = window.innerWidth;
-      if(w>=768){$('#faq li').css('display','list-item');}
-      else{$('#faq li').css('display','none');}
-  }
+function scrollFunction(){var t=document.getElementById("nav-buttom"),e=document.getElementById("float-nav"),o=document.getElementById("top"),n=document.getElementById("original-nav")
+document.body.scrollTop>100||document.documentElement.scrollTop>100?(n.style.backgroundColor="rgba(0,0,0,.9)",o.style.opacity=.9,o.disabled=0,o.style.cursor="pointer",t.style.backgroundColor="rgba(0,0,0,0.35)",t.style.top="10px",e.style.top=0):(n.style.backgroundColor="rgba(0,0,0,0)",o.style.opacity=0,o.disabled=1,o.style.cursor="default",t.style.backgroundColor="rgba(0,0,0,0)",t.style.top=0,e.style.top="-10%")}function scrollToTop(){0!=document.body.scrollTop||0!=document.documentElement.scrollTop?(window.scrollBy(0,-50),timeOut=setTimeout("scrollToTop()",5)):clearTimeout(timeOut)}function nav(){var t=document.getElementById("icon1"),e=document.getElementById("icon2"),o=document.getElementById("icon3"),n=document.getElementById("nav-buttom"),l=document.getElementById("mobile-nav-container"),n=document.getElementById("mobile-nav"),s=document.getElementById("top")
+rotated?(t.style.top=e.style.top=o.style.top="25px",t.style.transform="rotate(45deg)",e.style.transform="rotate(-45deg)",o.style.opacity=0,l.style.right="0%",n.style.zIndex="100",n.style.backgroundColor="rgba(0,0,0,.5)",s.style.display="none"):(t.style.transform=e.style.transform="rotate(0deg)",t.style.top="15px",e.style.top="23.75px",o.style.top="32.5px",o.style.opacity=1,l.style.right="-200px",setTimeout(function(){n.style.zIndex="-1",s.style.display="block"},800),n.style.backgroundColor="rgba(0,0,0,0)"),rotated=!rotated}function scroll_to_div(t){$("html,body").animate({scrollTop:$("#"+t).offset().top},1e3,"easeInOutCubic")}function toggle(t){var e=document.getElementsByTagName("button"),o=$("#"+t).children("li")
+if(i<o.length){for(var n=0;n<e.length;n++)e[n].disabled=1
+o.eq(i).toggle(300,"easeInOutCubic",function(){i++,toggle(t)})}else{i=0
+for(var n=0;n<e.length;n++)e[n].disabled=0}}function rotate(t){var e=document.getElementById(t)
+ang=getRotationDegrees($("#"+t)),ang+=180,e.style.transform="rotate("+ang+"deg)"}function getRotationDegrees(t){var e=t.css("-webkit-transform")||t.css("-moz-transform")||t.css("-ms-transform")||t.css("-o-transform")||t.css("transform")
+if("none"!==e)var o=e.split("(")[1].split(")")[0].split(","),n=o[0],l=o[1],s=Math.round(Math.atan2(l,n)*(180/Math.PI))
+else var s=0
+return 0>s?s+360:s}function resize_win(t){var e=window.innerWidth
+e>=768?$("#faq li").css("display","list-item"):$("#faq li").css("display","none")}window.onscroll=function(){scrollFunction()}
+var timeOut,rotated=!0,i=0
+window.onresize=resize_win
+var handler=window.onresize
+handler()
